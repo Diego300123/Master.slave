@@ -16,3 +16,11 @@
 # For section 4 we will have to modify some files of the tierra machine to make it a master system.
 
 # For section 5 we will have to modify some files of the venus machine to make it a slave system.
+
+# For section 6 we have to configure a section of the db.system.test file which is “Negative Cache TTL”.
+
+# For the section 7 we have to configure a section of the named.conf.options file so that unauthorized queries are forwarded to that IP
+
+# For section 8 we will have to configure the db.sistema.test file to add the aliases as requested by the exercise
+
+# For section 9 and 10 we will have to configure the db.sistema.test file to add marte as the mail system as the exercise tells us to do
