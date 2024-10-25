@@ -14,6 +14,10 @@ options {
 	// 	0.0.0.0;
 	// };
 
+    allow-recursion { trusted; };
+    allow-query { trusted; };
+    allow-transfer { none; };
+
 	//========================================================================
 	// If BIND logs error messages about the root key being expired,
 	// you will need to update your keys.  See https://www.isc.org/bind-keys
@@ -22,4 +26,9 @@ options {
 
 	listen-on { any; };
 	listen-on-v6 { none; };
+};
+
+acl "trusted" {
+    127.0.0.0/8;
+    192.168.57.0/24;
 };
