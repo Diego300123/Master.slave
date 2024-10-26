@@ -1,26 +1,33 @@
----- Exercice 1
-# We are going to create the files vagrantfile and .gitignore and configure .gitignore to ignore changes in the .vagrant and backup files as requested by the exercise.
+# Ejercicios de Vagrant y Configuración de DNS
 
-# Finally I will also create the README file to document the exercises I am doing and the LICENSE file with a license of my choice.
+Este repositorio contiene una serie de ejercicios para configurar máquinas virtuales y un sistema de nombres de dominio (DNS) con Vagrant.
 
----- Exercice 2
+---
 
-#We put the necessary instructions in the vagrantfile to create the two virtual machines (venus and tierra) with their respective IP addresses.
+## Exercice 1
 
-#Finally we do "vagrant up" to create the Virtual Machines.
+Vamos a crear los archivos `Vagrantfile` y `.gitignore`. Configuraremos `.gitignore` para ignorar cambios en los archivos `.vagrant` y en archivos de respaldo según lo solicitado en el ejercicio.
 
----- Exercice 3
+Finalmente, crearemos también el archivo `README.md` para documentar los ejercicios realizados y el archivo `LICENSE` con una licencia de mi elección.
 
-# For section 1, 2 and 3 we will have to configure the named.conf.options file, to do this we will copy it outside, modify it and then copy it to the machine again.
+---
 
-# For section 4 we will have to modify some files of the tierra machine to make it a master system.
+## Exercice 2
 
-# For section 5 we will have to modify some files of the venus machine to make it a slave system.
+Incorporamos las instrucciones necesarias en el `Vagrantfile` para crear dos máquinas virtuales (venus y tierra) con sus respectivas direcciones IP.
 
-# For section 6 we have to configure a section of the db.system.test file which is “Negative Cache TTL”.
+Finalmente, ejecutamos `vagrant up` para levantar las máquinas virtuales.
 
-# For the section 7 we have to configure a section of the named.conf.options file so that unauthorized queries are forwarded to that IP
+---
 
-# For section 8 we will have to configure the db.sistema.test file to add the aliases as requested by the exercise
+## Exercice 3
 
-# For section 9 and 10 we will have to configure the db.sistema.test file to add marte as the mail system as the exercise tells us to do
+### Configuraciones en los archivos
+
+1. Para las secciones 1, 2 y 3, configuramos el archivo `named.conf.options`. Para ello, copiamos el archivo fuera de la máquina, lo modificamos y luego lo volvemos a copiar dentro de la máquina.
+2. En la sección 4, modificamos ciertos archivos en la máquina `tierra` para configurarla como un sistema maestro.
+3. En la sección 5, modificamos algunos archivos en la máquina `venus` para configurarla como un sistema esclavo.
+4. En la sección 6, configuramos la sección "Negative Cache TTL" en el archivo `db.system.test`.
+5. Para la sección 7, configuramos una sección en el archivo `named.conf.options` para que las consultas no autorizadas se redirijan a una IP específica.
+6. En la sección 8, configuramos el archivo `db.sistema.test` para añadir los alias solicitados en el ejercicio.
+7. Para las secciones 9 y 10, configuramos el archivo `db.sistema.test` para añadir a `marte` como el sistema de correo, según las instrucciones del ejercicio.
