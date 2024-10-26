@@ -26,7 +26,12 @@ Vagrant.configure("2") do |config|
     cp -v /vagrant/db.sistma.test /etc/bind/db.sistma.test
     cp -v /vagrant/zona.inversa /etc/bind/db.192
 
+    sudo chown bind:bind /etc/bind/db.sistma.test
+    sudo chmod 644 /etc/bind/db.sistma.test
+    sudo chown bind:bind /etc/bind/db.192
+    sudo chmod 644 /etc/bind/db.192
     systemctl restart bind9
 
+    SHELL
   end
 end
